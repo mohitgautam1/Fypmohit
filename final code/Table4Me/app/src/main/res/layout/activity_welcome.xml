@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    tools:context="com.table4me.mohitgautam.WelcomeActivity">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/WelcomeText"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome To Table4Me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignRight="@+id/WelcomeText"
+        android:layout_alignLeft="@+id/WelcomeText"
+        android:layout_below="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/WelcomeText"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text=" New To Table 4 Me ?"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/SignUpBtn"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:text="Sign  UP"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="80dp"
+            android:text=" Already have an account ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/SignInBtn"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:text="Sign  IN"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

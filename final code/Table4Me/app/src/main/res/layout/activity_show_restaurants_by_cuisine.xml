@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    tools:context="com.table4me.mohitgautam.ShowRestaurantsByCuisineActivity">
+
+    <RelativeLayout
+        android:id="@+id/CuisineHeader"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/BackChooseCuisine"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:text="Showing Restaurants By Cuisine"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/BackChooseCuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/CuisineHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mCard"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <TextView
+                      android:id="@+id/foundtext"
+                      android:textColor="#000"
+                      android:layout_marginLeft="15dp"
+                      android:layout_centerVertical="true"
+                      android:textStyle="bold"
+                      android:textSize="18dp"
+                      android:text="Nearby"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+                  <TextView
+                      android:id="@+id/foundType"
+                      android:layout_marginLeft="10dp"
+                      android:layout_centerVertical="true"
+                      android:textStyle="bold"
+                      android:textSize="18dp"
+                      android:text="Indian"
+                      android:layout_toRightOf="@+id/foundtext"
+                      android:textColor="@color/colorAccent"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+                  <TextView
+                      android:id="@+id/foundrestaurant"
+                      android:layout_marginLeft="10dp"
+                      android:layout_centerVertical="true"
+                      android:textStyle="bold"
+                      android:textSize="18dp"
+                      android:text="Restaurants :"
+                      android:layout_toRightOf="@+id/foundType"
+                      android:textColor="#000"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+                  <TextView
+                      android:id="@+id/foundNumber"
+                      android:layout_marginLeft="10dp"
+                      android:layout_centerVertical="true"
+                      android:textStyle="bold"
+                      android:textSize="18dp"
+                      android:text="0"
+                      android:layout_toRightOf="@+id/foundrestaurant"
+                      android:textColor="@color/colorAccent"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+              </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/mCard"
+                android:text="Restaurant List"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/mCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

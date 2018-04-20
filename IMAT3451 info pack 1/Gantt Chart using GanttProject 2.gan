@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Sample Pert and Gantt Project" company="" webLink="http://" view-date="2017-11-05" view-index="0" gantt-divider-location="389" resource-divider-location="310" version="2.8.5" locale="en_US">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="385" order="0"/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="taskLabelRight" value="taskDates"/>
+        <option id="color.recent"><![CDATA[#99ff99 #00cc00 #cccccc #ffcc00 #ff9999 #cc6600 #ff3333 #f4f4f4]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="162" order="0"/>
+        <field id="1" name="Default role" width="144" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="none">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2017" month="10" date="2" type="WORKING_DAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="3" name="Project Start" meeting="false" start="2017-10-02" duration="1" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Learning Android" color="#00cc00" meeting="false" start="2017-10-03" duration="76" complete="0" expand="true"/>
+        <task id="4" name="Choose a project" color="#ff9999" meeting="false" start="2017-10-03" duration="15" complete="0" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="1st Meeting - Choosing Your Project, writing a Project Contract" color="#ffcc00" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
+            <notes><![CDATA[1st Meeting - Choosing Your Project and How to write your Project Contract]]></notes>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" name="Write Project Contract" color="#8cb6ce" meeting="false" start="2017-10-12" duration="6" complete="0" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="32" name="2nd Meeting - Project Contract Review" color="#ffcc00" meeting="false" start="2017-10-18" duration="1" complete="0" expand="true">
+            <notes><![CDATA[2nd Meeting - Project Contract Review
+]]></notes>
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="34" name="Write Project Contract" color="#8cb6ce" meeting="false" start="2017-10-19" duration="6" complete="1" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" name="3rd meeting - Contract Sign-off, First Deliverable Introduction" color="#ffcc00" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true">
+            <notes><![CDATA[3rd meeting - Project Contract Sign-off, First Deliverable Introduction]]></notes>
+            <depend id="44" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="44" name="Finish Project Contract" color="#8cb6ce" meeting="false" start="2017-10-26" duration="1" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="Sign off Project Contract" color="#ff3333" meeting="true" start="2017-10-27" duration="0" complete="92" expand="true"/>
+        <task id="47" name="Literature Review" color="#ff9999" meeting="false" start="2017-10-23" duration="12" complete="0" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="51" name="Requirements Specification" color="#ff9999" meeting="false" start="2017-10-30" duration="5" complete="0" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="50" name="Write First Submission" meeting="false" start="2017-11-04" duration="4" complete="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="52" name="4th Meeting - First Submission" color="#ffcc00" meeting="false" start="2017-11-08" duration="1" complete="0" expand="true">
+            <notes><![CDATA[4th Meeting - First Submission]]></notes>
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" name="Write First Submission" meeting="false" start="2017-11-09" duration="6" complete="0" expand="true">
+            <depend id="54" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" name="5th Meeting - First Submission Feedback" color="#ffcc00" meeting="false" start="2017-11-15" duration="1" complete="0" expand="true">
+            <notes><![CDATA[5th Meeting - First Submission Feedback]]></notes>
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="58" name="Finish First Submission" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="First Submission Due" color="#ff3333" meeting="true" start="2017-11-17" duration="0" complete="0" expand="true"/>
+        <task id="61" name="Start Writing Your App" color="#00cc00" meeting="false" start="2017-11-17" duration="19" complete="0" expand="true">
+            <depend id="68" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="68" name="6th Meeting - Any Problems?" color="#ffcc00" meeting="false" start="2017-12-06" duration="1" complete="0" expand="true">
+            <notes><![CDATA[6th Meeting - How are you doing? Any Problems?]]></notes>
+            <depend id="113" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="113" name="Writing Your App" color="#00cc00" meeting="false" start="2017-12-07" duration="11" complete="0" expand="true"/>
+        <task id="63" name="Holiday" color="#cccccc" meeting="false" start="2017-12-18" duration="19" complete="0" expand="true"/>
+        <task id="115" name="Writing Prototype App" color="#00cc00" meeting="false" start="2018-01-06" duration="11" complete="0" expand="true">
+            <depend id="76" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="76" name="7th Meeting - Finishing and Testing Your App" color="#ffcc00" meeting="false" start="2018-01-17" duration="1" complete="0" expand="true">
+            <notes><![CDATA[7th Meeting - Finishing Your App, Testing Your App
+]]></notes>
+            <depend id="119" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="119" name="Writing Your App" color="#00cc00" meeting="false" start="2018-01-18" duration="27" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="130" name="Testing Your App" color="#99ff99" meeting="false" start="2018-01-22" duration="23" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="78" name="8th Meeting - How to Write Your Final Report" color="#ffcc00" meeting="false" start="2018-02-14" duration="1" complete="0" expand="true">
+            <notes><![CDATA[8th Meeting - How to Write Your Final Report]]></notes>
+            <depend id="88" type="2" difference="0" hardness="Strong"/>
+            <depend id="123" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="123" name="Finishing Your App, Fixing Any Problems" color="#00cc00" meeting="false" start="2018-02-15" duration="9" complete="0" expand="true"/>
+        <task id="88" name="Start Writing Final Report" color="#8cb6ce" meeting="false" start="2018-02-15" duration="20" complete="0" expand="true">
+            <depend id="80" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="80" name="9th Meeting - Final Report Questions" color="#ffcc00" meeting="false" start="2018-03-07" duration="1" complete="0" expand="true">
+            <notes><![CDATA[9th Meeting - Final Report Questions]]></notes>
+            <depend id="98" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="98" name="Write Final Report" color="#8cb6ce" meeting="false" start="2018-03-08" duration="8" complete="0" expand="true">
+            <depend id="90" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="90" name="Draft Final Report to Richard for Feedback" color="#8cb6ce" meeting="true" start="2018-03-16" duration="0" complete="0" expand="true"/>
+        <task id="66" name="Holiday" color="#cccccc" meeting="false" start="2018-03-19" duration="19" complete="0" expand="true"/>
+        <task id="86" name="Write Final Report" color="#8cb6ce" meeting="false" start="2018-04-07" duration="4" complete="0" expand="true">
+            <depend id="82" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="82" name="10th Meeting - Final Report Feedback" color="#ffcc00" meeting="false" start="2018-04-11" duration="1" complete="0" expand="true">
+            <notes><![CDATA[10th Meeting - Final Report Feedback]]></notes>
+            <depend id="69" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="69" name="Finish Final Report" color="#8cb6ce" meeting="false" start="2018-04-12" duration="8" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Final Report Due" color="#ff3333" meeting="true" start="2018-04-20" duration="0" complete="0" expand="true"/>
+        <task id="14" name="Vivas take place" color="#ff3333" meeting="false" start="2018-04-23" duration="19" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Student (your name!)" function="2" contacts="" phone=""/>
+        <resource id="1" name="Dr Richard" function="1" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Supervisor"/>
+        <role id="2" name="Student"/>
+    </roles>
+</project>

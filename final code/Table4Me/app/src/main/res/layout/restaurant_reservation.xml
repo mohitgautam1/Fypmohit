@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorOffWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.table4me.mohitgautam.TableChooserActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/TablesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table1"
+                    android:tag="Table1,4"
+                    android:src="@drawable/table_4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table2"
+                    android:tag="Table2,2"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_dinner_2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table3"
+                    android:tag="Table3,4"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table4"
+                    android:tag="Table4,3"
+                    android:src="@drawable/table_meeting_3"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table5"
+                    android:tag="Table5,2"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_dinner_2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table6"
+                    android:tag="Table6,3"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_meeting_3"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table7"
+                    android:tag="Table7,6"
+                    android:src="@drawable/family_table"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table8"
+                    android:tag="Table8,6"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/family_table"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table9"
+                    android:tag="Table9,6"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/family_table"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table10"
+                    android:tag="Table10,6"
+                    android:src="@drawable/table_4b"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:id="@+id/Enterance"
+                    android:tag="Enterance"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/door"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:onClick="setReservationTable"
+                    android:id="@+id/Table12"
+                    android:tag="Table12,6"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_4b"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Table13"
+                    android:onClick="setReservationTable"
+                    android:tag="Table13,2"
+                    android:src="@drawable/table_outside_2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:tag="EmptySpace"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/door"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <ImageView
+                    android:id="@+id/Table14"
+                    android:tag="Table14,2"
+                    android:onClick="setReservationTable"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/table_outside_2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/mDoneBtn"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="Done"
+                    android:background="@drawable/edit_text_capsule"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp" />
+
+
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/DeSelectBtn"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="Un-Check Table"
+                    android:background="@drawable/edit_text_capsule"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

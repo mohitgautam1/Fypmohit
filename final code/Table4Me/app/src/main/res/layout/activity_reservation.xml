@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    tools:context="com.table4me.mohitgautam.ReservationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/ReservationRestaurant"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Set  Reservation  Details"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:id="@+id/Tag1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Choose Reservation Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TimePicker
+                    android:id="@+id/TimePicker"
+                    android:layout_below="@+id/Tag1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TimePicker>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Set  Reservation  time"
+                    android:id="@+id/TimeBtn"
+                    android:layout_below="@+id/TimePicker"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Selected TIme"
+                    android:layout_below="@+id/TimeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/SeatingPlanBtn"
+                    android:text="Choose Table"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorAccent"
+                    android:layout_below="@+id/timeText"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@+id/SeatingPlanBtn"
+                    android:id="@+id/ReserveBtn"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Make  Reservation"
+                    android:background="@drawable/round_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
